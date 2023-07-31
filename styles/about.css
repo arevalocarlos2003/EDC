@@ -1,0 +1,66 @@
+@media screen and (min-width:360px){
+    .about{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100vh;
+        background-color: #262626;
+        transform: translateX(+110%);
+        transition: .5s ease-out;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        gap: 2vh;
+        overflow: hidden;
+    }
+    .about_visible{
+        transform: translateX(0);
+    }
+    .header_about{
+        margin-top: 2vh;
+        width: 95%;
+        height: 20vh;
+        background-color: crimson;
+        background-image: url('https://www.catholicregister.org/media/k2/items/cache/0438978f7609be449d4328048fa36127_XL.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        border-radius: 20px;
+    }
+    .content_about{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .content_about_title{
+        position: relative;
+        color: #f0f8ff;
+        font-size: 8vw;
+        width: 90%;
+        text-transform: uppercase;
+        letter-spacing: 1vw;
+    }
+
+    .content_about_title::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10%;
+        width: 100%;
+        height: .5vh;
+        background-color: #f0f8ff;
+    }
+    .content_about_paragraph{
+        color: #f0f8ff;
+        font-size: 5vw;
+        width: 90%;
+        text-align: justify;
+    }
+}
